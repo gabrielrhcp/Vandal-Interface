@@ -1,4 +1,6 @@
 import './styles.css'
+import {slider} from '../../components/Slide'
+import AwesomeSlider from 'react-awesome-slider';
 
 function App() {
   return (
@@ -16,7 +18,7 @@ function App() {
         </div>
       </header>
 
-      <div className='filters'>
+      <div className='filtersbar'>
         <button className='promobtn'>PROMOÇÕES</button>
         <div class="dropdown">
           <button class="dropbtn">GÊNEROS</button>
@@ -36,9 +38,14 @@ function App() {
             <a href="#">TIRO</a>
           </div>
         </div>
-        <input></input>
-        <button>BUSCAR</button>
+        <button className='wlbtn'>LISTA DE DESEJOS</button>
+        <div className='searchbar'>
+          <input placeholder='Digite aqui'></input>
+          <button className='searchbtn'>BUSCAR</button>
+        </div>
       </div>
+
+      <AwesomeSlider></AwesomeSlider>
     </div>
   );
 }

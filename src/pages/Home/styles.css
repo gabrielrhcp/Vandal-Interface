@@ -62,9 +62,13 @@ header button:hover{
     margin: auto;
     width: 50%;
     padding: 10px;
+    padding-top: 20px;
 }
 
-.promobtn{
+
+
+.filtersbar button{
+    align-self: center;
     background-color: #545454;
     color: white;
     padding: 7px;
@@ -73,21 +77,13 @@ header button:hover{
     cursor: pointer;
 }
 
+.promobtn{margin-right: 20px;}
 .promobtn:hover{background-color: #02A4FF}
-
-
-.dropbtn {
-    background-color: #545454;
-    color: white;
-    padding: 7px;
-    border: none;
-    border-radius: 13px;
-    cursor: pointer;
-}
 
 .dropdown {
     position: relative;
     display: inline-block;
+    margin-right: 20px;
 }
   
 .dropdown-content {
@@ -112,6 +108,33 @@ header button:hover{
     display: block;
 }
   
-.dropdown:hover .dropbtn {
-    background-color: #3e8e41;
+.dropdown:hover .dropbtn {background-color: #45B649;}
+
+.searchbar{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-left: 130px;
 }
+
+.wlbtn{
+    flex-shrink: 0;
+}
+
+.wlbtn:hover {background-color: #45B649;}
+
+.filtersbar input{
+    background-color: #545454;
+    color: white;
+    padding: 7px;
+    border: none;
+    border-radius: 13px;
+    cursor: pointer;
+}
+
+.searchbtn{margin-left: 5px; justify-content: flex-end;}
+
+.searchbtn:hover {background-color: #45B649;}
+
+/*------------------------------------------------------*/
+
