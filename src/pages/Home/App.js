@@ -1,6 +1,5 @@
 import './styles.css'
-import {slider} from '../../components/Slide'
-import AwesomeSlider from 'react-awesome-slider';
+import Carousel, { CarouselItem } from "../../components/Carousel/Carousel";
 
 function App() {
   return (
@@ -45,7 +44,16 @@ function App() {
         </div>
       </div>
 
-      <AwesomeSlider></AwesomeSlider>
+      <div className='container-slide'>
+        <Carousel>
+          <CarouselItem><img src='https://pcbuildsonabudget.com/wp-content/uploads/2016/01/the-witcher-3-wild-hunt-banner.png' alt='Jogo 1'/></CarouselItem>
+          <CarouselItem><img src='https://faru.files.wordpress.com/2018/01/celeste-capa.jpg' alt='Jogo 2'/></CarouselItem>
+          <CarouselItem><img src='https://www.centar-tehnike.hr/upload/2021/03/bannerz_6058496cdba1a.jpg' alt='Jogo 3'/></CarouselItem>
+          <CarouselItem><img src='https://images8.alphacoders.com/710/710329.jpg' alt='Jogo 4'/></CarouselItem>
+          <CarouselItem><img src='https://waytoomany.games/wp-content/uploads/2018/04/Banner-1200x375.jpg' alt='Jogo 5'/></CarouselItem>
+        </Carousel>
+      </div>
+
     </div>
   );
 }
